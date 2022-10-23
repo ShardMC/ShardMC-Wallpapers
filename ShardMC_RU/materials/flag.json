@@ -1,0 +1,29 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"TINT" : 0,
+				"VERSION" : 2
+			},
+			"constantshadervalues" : 
+			{
+				"Speed" : 0.4,
+				"Strength" : 0.4
+			},
+			"cullmode" : "normal",
+			"depthtest" : "enabled",
+			"depthwrite" : "enabled",
+			"shader" : "flag",
+			"textures" : [ "flag", "flag_normal", "cloth" ],
+			"usershadervalues" : 
+			{
+				"flagcolor1" : "color2",
+				"flagcolor2" : "color3",
+				"schemecolor" : "color1"
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"LIGHTING" : 0,
+				"REFLECTION" : 0,
+				"VERSION" : 2
+			},
+			"constantshadervalues" : {},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericimage2",
+			"textures" : [ "undefined - Imgur (1)" ]
+		}
+	]
+}

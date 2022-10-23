@@ -1,0 +1,3594 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 0.00000",
+		"eye" : "0.00000 0.00000 1.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.00000 0.00000 0.00000",
+		"bloom" : true,
+		"bloomhdrfeather" : 0.69999999,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 2.0,
+		"bloomhdrstrength" : 10.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 2.0,
+		"bloomthreshold" : 0.64999998,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 5.0,
+		"clearcolor" : "0.00000 0.00000 0.00000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : true,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 10.0,
+			"color" : "0.00000 0.00000 0.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 1,
+			"image" : "models/flag.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Logo+BG",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : true,
+			"scale" : "1.05000 1.05000 1.00000",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"script" : "'use strict';\n/** This script plays a sound from a specified layer when the current object is clicked. */\n\n/**\n * Replace \"PLACEHOLDER\" with the name of your sound layer.\n * Please note: Your sound layer must use sound mode 'single' and 'start silent' must be enabled.\n */\nconst AMETHYST_SOUND_SHIMMER = 'shimmer.ogg';\n\n/**\n * @param {ICursorEvent} event\n */\nexport function cursorClick() {\n\tthisScene.getLayer(AMETHYST_SOUND_SHIMMER).play();\n}\n",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 41,
+			"instanceoverride" : 
+			{
+				"brightness" : 
+				{
+					"user" : "hdr",
+					"value" : 5.0
+				},
+				"colorn" : 
+				{
+					"user" : "newproperty1",
+					"value" : "0.01961 0.69020 0.70980"
+				},
+				"id" : 42,
+				"rate" : 0.15000001,
+				"size" : 0.85000002,
+				"speed" : 
+				{
+					"user" : "newproperty2",
+					"value" : 5.0
+				}
+			},
+			"locktransforms" : false,
+			"name" : "Lightnings(auto)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/presets/lightning1.json",
+			"scale" : "1.60086 1.60086 1.60086",
+			"visible" : 
+			{
+				"user" : "lightnings",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 61,
+			"instanceoverride" : 
+			{
+				"brightness" : 
+				{
+					"user" : "newproperty3",
+					"value" : 3.0
+				},
+				"colorn" : 
+				{
+					"user" : "newproperty",
+					"value" : "0.05490 0.18824 0.21569"
+				},
+				"id" : 62,
+				"rate" : 0.40000001,
+				"size" : 0.75,
+				"speed" : 0.5
+			},
+			"locktransforms" : false,
+			"name" : "Rain)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/presets/starfield.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : 
+			{
+				"user" : "rain",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 83,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 0,
+								"frequencymin" : 0.0,
+								"strength" : 0.125
+							},
+							"id" : 84,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 88,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 89
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 765,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 0,
+								"frequencymin" : 0.0,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 766,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 74,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "0",
+			"origin" : "60.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 803,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 1,
+								"frequencymin" : 1,
+								"strength" : 0.125
+							},
+							"id" : 804,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 805,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 806
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 807,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 1,
+								"frequencymin" : 1,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 808,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 802,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "1",
+			"origin" : "180.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 812,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 2,
+								"frequencymin" : 2,
+								"strength" : 0.125
+							},
+							"id" : 813,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 814,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 815
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 816,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 2,
+								"frequencymin" : 2,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 817,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 811,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "2",
+			"origin" : "300.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 821,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 3,
+								"frequencymin" : 3,
+								"strength" : 0.125
+							},
+							"id" : 822,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 823,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 824
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 825,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 3,
+								"frequencymin" : 3,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 826,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 820,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "3",
+			"origin" : "420.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 830,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 4,
+								"frequencymin" : 4,
+								"strength" : 0.125
+							},
+							"id" : 831,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 832,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 833
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 834,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 4,
+								"frequencymin" : 4,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 835,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 829,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "4",
+			"origin" : "540.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 839,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 5,
+								"frequencymin" : 5,
+								"strength" : 0.125
+							},
+							"id" : 840,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 841,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 842
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 843,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 5,
+								"frequencymin" : 5,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 844,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 838,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "5",
+			"origin" : "660.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 848,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 6,
+								"frequencymin" : 6,
+								"strength" : 0.125
+							},
+							"id" : 849,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 850,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 851
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 852,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 6,
+								"frequencymin" : 6,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 853,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 847,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "6",
+			"origin" : "780.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 857,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 7,
+								"frequencymin" : 7,
+								"strength" : 0.125
+							},
+							"id" : 858,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 859,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 860
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 861,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 7,
+								"frequencymin" : 7,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 862,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 856,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "7",
+			"origin" : "900.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 866,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 8,
+								"frequencymin" : 8,
+								"strength" : 0.125
+							},
+							"id" : 867,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 868,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 869
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 870,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 8,
+								"frequencymin" : 8,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 871,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 865,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "8",
+			"origin" : "1020.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 875,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 9,
+								"frequencymin" : 9,
+								"strength" : 0.125
+							},
+							"id" : 876,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 877,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 878
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 879,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 9,
+								"frequencymin" : 9,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 880,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 874,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "9",
+			"origin" : "1140.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 884,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 10,
+								"frequencymin" : 10,
+								"strength" : 0.125
+							},
+							"id" : 885,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 886,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 887
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 888,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 10,
+								"frequencymin" : 10,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 889,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 883,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "10",
+			"origin" : "1260.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 893,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 11,
+								"frequencymin" : 11,
+								"strength" : 0.125
+							},
+							"id" : 894,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 895,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 896
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 897,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 11,
+								"frequencymin" : 11,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 898,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 892,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "11",
+			"origin" : "1380.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 902,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 12,
+								"frequencymin" : 12,
+								"strength" : 0.125
+							},
+							"id" : 903,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 904,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 905
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 906,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 12,
+								"frequencymin" : 12,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 907,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 901,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "12",
+			"origin" : "1500.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 911,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 13,
+								"frequencymin" : 13,
+								"strength" : 0.125
+							},
+							"id" : 912,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 913,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 914
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 915,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 13,
+								"frequencymin" : 13,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 916,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 910,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "13",
+			"origin" : "1620.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 920,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 14,
+								"frequencymin" : 14,
+								"strength" : 0.125
+							},
+							"id" : 921,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 922,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 923
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 924,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 14,
+								"frequencymin" : 14,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 925,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 919,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "14",
+			"origin" : "1740.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 929,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 15,
+								"frequencymin" : 15,
+								"strength" : 0.125
+							},
+							"id" : 930,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 931,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 932
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 933,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 15,
+								"frequencymin" : 15,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 934,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 928,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "15",
+			"origin" : "1860.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 938,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 16,
+								"frequencymin" : 16,
+								"strength" : 0.125
+							},
+							"id" : 939,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 940,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 941
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 942,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 16,
+								"frequencymin" : 16,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 943,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 937,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "16",
+			"origin" : "1980.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 947,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 17,
+								"frequencymin" : 17,
+								"strength" : 0.125
+							},
+							"id" : 948,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 949,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 950
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 951,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 17,
+								"frequencymin" : 17,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 952,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 946,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "17",
+			"origin" : "2100.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 956,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 18,
+								"frequencymin" : 18,
+								"strength" : 0.125
+							},
+							"id" : 957,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 958,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 959
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 960,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 18,
+								"frequencymin" : 18,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 961,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 955,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "18",
+			"origin" : "2220.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 965,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 19,
+								"frequencymin" : 19,
+								"strength" : 0.125
+							},
+							"id" : 966,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 967,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 968
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 969,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 19,
+								"frequencymin" : 19,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 970,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 964,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "19",
+			"origin" : "2340.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 974,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 20,
+								"frequencymin" : 20,
+								"strength" : 0.125
+							},
+							"id" : 975,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 976,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 977
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 978,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 20,
+								"frequencymin" : 20,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 979,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 973,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "20",
+			"origin" : "2460.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 983,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 21,
+								"frequencymin" : 21,
+								"strength" : 0.125
+							},
+							"id" : 984,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 985,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 986
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 987,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 21,
+								"frequencymin" : 21,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 988,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 982,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "21",
+			"origin" : "2580.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 992,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 22,
+								"frequencymin" : 22,
+								"strength" : 0.125
+							},
+							"id" : 993,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 994,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 995
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 996,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 22,
+								"frequencymin" : 22,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 997,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 991,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "22",
+			"origin" : "2700.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1001,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 23,
+								"frequencymin" : 23,
+								"strength" : 0.125
+							},
+							"id" : 1002,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1003,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1004
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1005,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 15,
+								"frequencymin" : 15,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1006,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1000,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "23",
+			"origin" : "2820.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1010,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 24,
+								"frequencymin" : 24,
+								"strength" : 0.125
+							},
+							"id" : 1011,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1012,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1013
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1014,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 24,
+								"frequencymin" : 24,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1015,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1009,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "24",
+			"origin" : "2940.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1019,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 25,
+								"frequencymin" : 25,
+								"strength" : 0.125
+							},
+							"id" : 1020,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1021,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1022
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1023,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 25,
+								"frequencymin" : 25,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1024,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1018,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "25",
+			"origin" : "3060.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1028,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 26,
+								"frequencymin" : 26,
+								"strength" : 0.125
+							},
+							"id" : 1029,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1030,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1031
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1032,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 26,
+								"frequencymin" : 26,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1033,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1027,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "26",
+			"origin" : "3180.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1037,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 27,
+								"frequencymin" : 27,
+								"strength" : 0.125
+							},
+							"id" : 1038,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1039,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1040
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1041,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 27,
+								"frequencymin" : 27,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1042,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1036,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "27",
+			"origin" : "3300.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1046,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 28,
+								"frequencymin" : 28,
+								"strength" : 0.125
+							},
+							"id" : 1047,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1048,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1049
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1050,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 28,
+								"frequencymin" : 28,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1051,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1045,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "28",
+			"origin" : "3420.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1055,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 29,
+								"frequencymin" : 29,
+								"strength" : 0.125
+							},
+							"id" : 1056,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1057,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1058
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1059,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 29,
+								"frequencymin" : 29,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1060,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1054,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "29",
+			"origin" : "3540.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1064,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 30,
+								"frequencymin" : 30,
+								"strength" : 0.125
+							},
+							"id" : 1065,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1066,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1067
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1068,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 30,
+								"frequencymin" : 30,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1069,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1063,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "30",
+			"origin" : "3660.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "newproperty5",
+				"value" : 1.0
+			},
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 1073,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 15,
+								"audiobounds" : "0.1 1",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 31,
+								"frequencymin" : 31,
+								"strength" : 0.125
+							},
+							"id" : 1074,
+							"textures" : [ null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 1075,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : 
+								{
+									"user" : "newproperty4",
+									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+								}
+							},
+							"id" : 1076
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 1077,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 1.0,
+								"frequencymax" : 31,
+								"frequencymin" : 31,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 1078,
+							"textures" : [ null, null, "undefined - Imgur" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1072,
+			"image" : "models/undefined - Imgur (1).json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "31",
+			"origin" : "3780.00000 130.61978 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "120.00000 1080.00000",
+			"solid" : false,
+			"visible" : 
+			{
+				"user" : "ecualiser",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 412,
+			"locktransforms" : false,
+			"maxtime" : 5.0,
+			"mintime" : 1.0,
+			"muteineditor" : false,
+			"name" : "shimmer.ogg",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"playbackmode" : "single",
+			"scale" : "1.60086 1.60086 1.60086",
+			"sound" : [ "sounds/shimmer.ogg" ],
+			"startsilent" : false,
+			"volume" : 1.0
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"color" : "0.05098 0.18431 0.20784",
+			"id" : 72,
+			"intensity" : 2.0,
+			"light" : "point",
+			"locktransforms" : false,
+			"name" : "Lights)",
+			"origin" : "1920.00000 1080.00000 500.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"radius" : 2048.0,
+			"scale" : "1.47999 1.47999 1.47999",
+			"visible" : true
+		}
+	],
+	"version" : 1
+}

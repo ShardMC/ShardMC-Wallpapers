@@ -1,0 +1,136 @@
+{
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"ecualiser" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Эквалайзер",
+				"type" : "bool",
+				"value" : true
+			},
+			"hdr" : 
+			{
+				"fraction" : true,
+				"index" : 8,
+				"max" : 10,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Яркость молний",
+				"type" : "slider",
+				"value" : 5
+			},
+			"lightnings" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Молнии",
+				"type" : "bool",
+				"value" : true
+			},
+			"newproperty" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "Цвет дождя",
+				"type" : "color",
+				"value" : "0.054901960784313725 0.18823529411764706 0.21568627450980393"
+			},
+			"newproperty1" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "Цвет молний",
+				"type" : "color",
+				"value" : "0.0196078431372549 0.6901960784313725 0.7098039215686275"
+			},
+			"newproperty2" : 
+			{
+				"fraction" : true,
+				"index" : 9,
+				"max" : 10,
+				"min" : 0,
+				"order" : 109,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Скорость молний",
+				"type" : "slider",
+				"value" : 5
+			},
+			"newproperty3" : 
+			{
+				"fraction" : true,
+				"index" : 5,
+				"max" : 10,
+				"min" : 0,
+				"order" : 105,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Яркость дождя",
+				"type" : "slider",
+				"value" : 3
+			},
+			"newproperty4" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Цвет эквалайзера",
+				"type" : "color",
+				"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+			},
+			"newproperty5" : 
+			{
+				"fraction" : true,
+				"index" : 2,
+				"max" : 10,
+				"min" : 0,
+				"order" : 102,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Яркость эквалайзера",
+				"type" : "slider",
+				"value" : 1
+			},
+			"rain" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Дождь",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"templateoptions" : 
+	[
+		{
+			"adjustprojection" : true,
+			"animated" : true,
+			"configured" : true,
+			"description" : "Replace the image shown on the flag.",
+			"destination" : "materials/flag.png",
+			"last" : "C:/Users/server/Pictures/ShardMC/Wallpaper/logo_phoneless.png",
+			"name" : "Flag image",
+			"type" : "replacetexture"
+		}
+	],
+	"templatewizardshownonce" : true,
+	"title" : "ShardMC (RU)",
+	"type" : "scene",
+	"version" : 1
+}
