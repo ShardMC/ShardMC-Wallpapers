@@ -1,8 +1,8 @@
 {
 	"camera" : 
 	{
-		"center" : "0.00000 0.00000 0.00000",
-		"eye" : "0.00000 0.00000 1.00000",
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
 		"up" : "0.00000 1.00000 0.00000"
 	},
 	"general" : 
@@ -1851,11 +1851,7 @@
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -1863,7 +1859,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 938,
+					"id" : 404,
 					"name" : "",
 					"passes" : 
 					[
@@ -1878,11 +1874,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 16,
-								"frequencymin" : 16,
+								"frequencymax" : 15,
+								"frequencymin" : 15,
 								"strength" : 0.125
 							},
-							"id" : 939,
+							"id" : 405,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -1890,7 +1886,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 940,
+					"id" : 406,
 					"name" : "",
 					"passes" : 
 					[
@@ -1904,14 +1900,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 941
+							"id" : 407
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 942,
+					"id" : 408,
 					"name" : "",
 					"passes" : 
 					[
@@ -1925,44 +1921,36 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 16,
-								"frequencymin" : 16,
+								"frequencymax" : 15,
+								"frequencymin" : 15,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 943,
+							"id" : 409,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 937,
+			"id" : 403,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "16",
+			"name" : "15",
 			"origin" : "1980.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -1970,7 +1958,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 947,
+					"id" : 395,
 					"name" : "",
 					"passes" : 
 					[
@@ -1985,11 +1973,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 17,
-								"frequencymin" : 17,
+								"frequencymax" : 14,
+								"frequencymin" : 14,
 								"strength" : 0.125
 							},
-							"id" : 948,
+							"id" : 396,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -1997,7 +1985,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 949,
+					"id" : 397,
 					"name" : "",
 					"passes" : 
 					[
@@ -2011,14 +1999,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 950
+							"id" : 398
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 951,
+					"id" : 399,
 					"name" : "",
 					"passes" : 
 					[
@@ -2032,44 +2020,36 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 17,
-								"frequencymin" : 17,
+								"frequencymax" : 14,
+								"frequencymin" : 14,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 952,
+							"id" : 400,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 946,
+			"id" : 394,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "17",
+			"name" : "14",
 			"origin" : "2100.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -2077,7 +2057,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 956,
+					"id" : 386,
 					"name" : "",
 					"passes" : 
 					[
@@ -2092,11 +2072,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 18,
-								"frequencymin" : 18,
+								"frequencymax" : 13,
+								"frequencymin" : 13,
 								"strength" : 0.125
 							},
-							"id" : 957,
+							"id" : 387,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2104,7 +2084,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 958,
+					"id" : 388,
 					"name" : "",
 					"passes" : 
 					[
@@ -2118,14 +2098,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 959
+							"id" : 389
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 960,
+					"id" : 390,
 					"name" : "",
 					"passes" : 
 					[
@@ -2139,34 +2119,30 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 18,
-								"frequencymin" : 18,
+								"frequencymax" : 13,
+								"frequencymin" : 13,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 961,
+							"id" : 391,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 955,
+			"id" : 385,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "18",
+			"name" : "13",
 			"origin" : "2220.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
@@ -2184,7 +2160,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 965,
+					"id" : 377,
 					"name" : "",
 					"passes" : 
 					[
@@ -2199,11 +2175,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 19,
-								"frequencymin" : 19,
+								"frequencymax" : 12,
+								"frequencymin" : 12,
 								"strength" : 0.125
 							},
-							"id" : 966,
+							"id" : 378,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2211,7 +2187,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 967,
+					"id" : 379,
 					"name" : "",
 					"passes" : 
 					[
@@ -2225,14 +2201,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 968
+							"id" : 380
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 969,
+					"id" : 381,
 					"name" : "",
 					"passes" : 
 					[
@@ -2246,23 +2222,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 19,
-								"frequencymin" : 19,
+								"frequencymax" : 12,
+								"frequencymin" : 12,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 970,
+							"id" : 382,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 964,
+			"id" : 376,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "19",
+			"name" : "12",
 			"origin" : "2340.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -2279,11 +2255,7 @@
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -2291,7 +2263,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 974,
+					"id" : 368,
 					"name" : "",
 					"passes" : 
 					[
@@ -2306,11 +2278,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 20,
-								"frequencymin" : 20,
+								"frequencymax" : 11,
+								"frequencymin" : 11,
 								"strength" : 0.125
 							},
-							"id" : 975,
+							"id" : 369,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2318,7 +2290,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 976,
+					"id" : 370,
 					"name" : "",
 					"passes" : 
 					[
@@ -2332,14 +2304,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 977
+							"id" : 371
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 978,
+					"id" : 372,
 					"name" : "",
 					"passes" : 
 					[
@@ -2353,44 +2325,36 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 20,
-								"frequencymin" : 20,
+								"frequencymax" : 11,
+								"frequencymin" : 11,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 979,
+							"id" : 373,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 973,
+			"id" : 367,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "20",
+			"name" : "11",
 			"origin" : "2460.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -2398,7 +2362,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 983,
+					"id" : 359,
 					"name" : "",
 					"passes" : 
 					[
@@ -2413,11 +2377,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 21,
-								"frequencymin" : 21,
+								"frequencymax" : 10,
+								"frequencymin" : 10,
 								"strength" : 0.125
 							},
-							"id" : 984,
+							"id" : 360,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2425,7 +2389,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 985,
+					"id" : 361,
 					"name" : "",
 					"passes" : 
 					[
@@ -2439,14 +2403,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 986
+							"id" : 362
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 987,
+					"id" : 363,
 					"name" : "",
 					"passes" : 
 					[
@@ -2460,34 +2424,30 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 21,
-								"frequencymin" : 21,
+								"frequencymax" : 10,
+								"frequencymin" : 10,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 988,
+							"id" : 364,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 982,
+			"id" : 358,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "21",
+			"name" : "10",
 			"origin" : "2580.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
@@ -2505,7 +2465,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 992,
+					"id" : 350,
 					"name" : "",
 					"passes" : 
 					[
@@ -2520,11 +2480,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 22,
-								"frequencymin" : 22,
+								"frequencymax" : 9,
+								"frequencymin" : 9,
 								"strength" : 0.125
 							},
-							"id" : 993,
+							"id" : 351,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2532,7 +2492,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 994,
+					"id" : 352,
 					"name" : "",
 					"passes" : 
 					[
@@ -2546,14 +2506,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 995
+							"id" : 353
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 996,
+					"id" : 354,
 					"name" : "",
 					"passes" : 
 					[
@@ -2567,23 +2527,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 22,
-								"frequencymin" : 22,
+								"frequencymax" : 9,
+								"frequencymin" : 9,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 997,
+							"id" : 355,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 991,
+			"id" : 349,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "22",
+			"name" : "9",
 			"origin" : "2700.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -2612,7 +2572,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1001,
+					"id" : 341,
 					"name" : "",
 					"passes" : 
 					[
@@ -2627,11 +2587,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 23,
-								"frequencymin" : 23,
+								"frequencymax" : 8,
+								"frequencymin" : 8,
 								"strength" : 0.125
 							},
-							"id" : 1002,
+							"id" : 342,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2639,7 +2599,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1003,
+					"id" : 343,
 					"name" : "",
 					"passes" : 
 					[
@@ -2653,14 +2613,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1004
+							"id" : 344
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1005,
+					"id" : 345,
 					"name" : "",
 					"passes" : 
 					[
@@ -2674,23 +2634,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 15,
-								"frequencymin" : 15,
+								"frequencymax" : 8,
+								"frequencymin" : 8,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1006,
+							"id" : 346,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1000,
+			"id" : 340,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "23",
+			"name" : "8",
 			"origin" : "2820.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -2719,7 +2679,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1010,
+					"id" : 332,
 					"name" : "",
 					"passes" : 
 					[
@@ -2734,11 +2694,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 24,
-								"frequencymin" : 24,
+								"frequencymax" : 7,
+								"frequencymin" : 7,
 								"strength" : 0.125
 							},
-							"id" : 1011,
+							"id" : 333,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2746,7 +2706,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1012,
+					"id" : 334,
 					"name" : "",
 					"passes" : 
 					[
@@ -2760,14 +2720,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1013
+							"id" : 335
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1014,
+					"id" : 336,
 					"name" : "",
 					"passes" : 
 					[
@@ -2781,23 +2741,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 24,
-								"frequencymin" : 24,
+								"frequencymax" : 7,
+								"frequencymin" : 7,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1015,
+							"id" : 337,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1009,
+			"id" : 331,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "24",
+			"name" : "7",
 			"origin" : "2940.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -2826,7 +2786,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1019,
+					"id" : 323,
 					"name" : "",
 					"passes" : 
 					[
@@ -2841,11 +2801,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 25,
-								"frequencymin" : 25,
+								"frequencymax" : 6,
+								"frequencymin" : 6,
 								"strength" : 0.125
 							},
-							"id" : 1020,
+							"id" : 324,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2853,7 +2813,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1021,
+					"id" : 325,
 					"name" : "",
 					"passes" : 
 					[
@@ -2867,14 +2827,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1022
+							"id" : 326
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1023,
+					"id" : 327,
 					"name" : "",
 					"passes" : 
 					[
@@ -2888,23 +2848,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 25,
-								"frequencymin" : 25,
+								"frequencymax" : 6,
+								"frequencymin" : 6,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1024,
+							"id" : 328,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1018,
+			"id" : 322,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "25",
+			"name" : "6",
 			"origin" : "3060.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -2933,7 +2893,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1028,
+					"id" : 305,
 					"name" : "",
 					"passes" : 
 					[
@@ -2948,11 +2908,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 26,
-								"frequencymin" : 26,
+								"frequencymax" : 4,
+								"frequencymin" : 4,
 								"strength" : 0.125
 							},
-							"id" : 1029,
+							"id" : 306,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -2960,7 +2920,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1030,
+					"id" : 307,
 					"name" : "",
 					"passes" : 
 					[
@@ -2974,14 +2934,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1031
+							"id" : 308
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1032,
+					"id" : 309,
 					"name" : "",
 					"passes" : 
 					[
@@ -2995,23 +2955,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 26,
-								"frequencymin" : 26,
+								"frequencymax" : 4,
+								"frequencymin" : 4,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1033,
+							"id" : 310,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1027,
+			"id" : 304,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "26",
+			"name" : "4",
 			"origin" : "3180.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -3040,7 +3000,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1037,
+					"id" : 314,
 					"name" : "",
 					"passes" : 
 					[
@@ -3055,11 +3015,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 27,
-								"frequencymin" : 27,
+								"frequencymax" : 5,
+								"frequencymin" : 5,
 								"strength" : 0.125
 							},
-							"id" : 1038,
+							"id" : 315,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -3067,7 +3027,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1039,
+					"id" : 316,
 					"name" : "",
 					"passes" : 
 					[
@@ -3081,14 +3041,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1040
+							"id" : 317
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1041,
+					"id" : 318,
 					"name" : "",
 					"passes" : 
 					[
@@ -3102,23 +3062,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 27,
-								"frequencymin" : 27,
+								"frequencymax" : 5,
+								"frequencymin" : 5,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1042,
+							"id" : 319,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1036,
+			"id" : 313,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "27",
+			"name" : "5",
 			"origin" : "3300.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -3147,7 +3107,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1046,
+					"id" : 287,
 					"name" : "",
 					"passes" : 
 					[
@@ -3162,11 +3122,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 28,
-								"frequencymin" : 28,
+								"frequencymax" : 2,
+								"frequencymin" : 2,
 								"strength" : 0.125
 							},
-							"id" : 1047,
+							"id" : 288,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -3174,7 +3134,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1048,
+					"id" : 289,
 					"name" : "",
 					"passes" : 
 					[
@@ -3188,14 +3148,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1049
+							"id" : 290
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1050,
+					"id" : 291,
 					"name" : "",
 					"passes" : 
 					[
@@ -3209,23 +3169,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 28,
-								"frequencymin" : 28,
+								"frequencymax" : 2,
+								"frequencymin" : 2,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1051,
+							"id" : 292,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1045,
+			"id" : 286,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "28",
+			"name" : "2",
 			"origin" : "3420.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
@@ -3242,11 +3202,7 @@
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -3254,7 +3210,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1055,
+					"id" : 296,
 					"name" : "",
 					"passes" : 
 					[
@@ -3269,11 +3225,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 29,
-								"frequencymin" : 29,
+								"frequencymax" : 3,
+								"frequencymin" : 3,
 								"strength" : 0.125
 							},
-							"id" : 1056,
+							"id" : 297,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -3281,7 +3237,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1057,
+					"id" : 298,
 					"name" : "",
 					"passes" : 
 					[
@@ -3295,14 +3251,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1058
+							"id" : 299
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1059,
+					"id" : 300,
 					"name" : "",
 					"passes" : 
 					[
@@ -3316,44 +3272,36 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 29,
-								"frequencymin" : 29,
+								"frequencymax" : 3,
+								"frequencymin" : 3,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1060,
+							"id" : 301,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1054,
+			"id" : 295,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "29",
+			"name" : "3",
 			"origin" : "3540.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"angles" : "0.00000 0.00000 0.00000",
-			"brightness" : 
-			{
-				"user" : "newproperty5",
-				"value" : 1.0
-			},
+			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
@@ -3361,7 +3309,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1064,
+					"id" : 277,
 					"name" : "",
 					"passes" : 
 					[
@@ -3376,11 +3324,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 30,
-								"frequencymin" : 30,
+								"frequencymax" : 1,
+								"frequencymin" : 1,
 								"strength" : 0.125
 							},
-							"id" : 1065,
+							"id" : 278,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -3388,7 +3336,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1066,
+					"id" : 279,
 					"name" : "",
 					"passes" : 
 					[
@@ -3402,14 +3350,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1067
+							"id" : 280
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1068,
+					"id" : 281,
 					"name" : "",
 					"passes" : 
 					[
@@ -3423,34 +3371,30 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 30,
-								"frequencymin" : 30,
+								"frequencymax" : 1,
+								"frequencymin" : 1,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1069,
+							"id" : 282,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1063,
+			"id" : 276,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "30",
+			"name" : "1",
 			"origin" : "3660.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
 			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "120.00000 1080.00000",
 			"solid" : false,
-			"visible" : 
-			{
-				"user" : "ecualiser",
-				"value" : true
-			}
+			"visible" : true
 		},
 		{
 			"alignment" : "center",
@@ -3468,7 +3412,7 @@
 			[
 				{
 					"file" : "effects/shake/effect.json",
-					"id" : 1073,
+					"id" : 268,
 					"name" : "",
 					"passes" : 
 					[
@@ -3483,11 +3427,11 @@
 								"audiobounds" : "0.1 1",
 								"audioexponent" : 1.0,
 								"bounds" : "0 1",
-								"frequencymax" : 31,
-								"frequencymin" : 31,
+								"frequencymax" : 0,
+								"frequencymin" : 0.0,
 								"strength" : 0.125
 							},
-							"id" : 1074,
+							"id" : 269,
 							"textures" : [ null, "undefined - Imgur" ]
 						}
 					],
@@ -3495,7 +3439,7 @@
 				},
 				{
 					"file" : "effects/tint/effect.json",
-					"id" : 1075,
+					"id" : 270,
 					"name" : "",
 					"passes" : 
 					[
@@ -3509,14 +3453,14 @@
 									"value" : "0.00784313725490196 0.2627450980392157 0.3176470588235294"
 								}
 							},
-							"id" : 1076
+							"id" : 271
 						}
 					],
 					"visible" : true
 				},
 				{
 					"file" : "effects/pulse/effect.json",
-					"id" : 1077,
+					"id" : 272,
 					"name" : "",
 					"passes" : 
 					[
@@ -3530,23 +3474,23 @@
 								"audioamount" : 1.0,
 								"audiobounds" : "0.5 1.0",
 								"audioexponent" : 1.0,
-								"frequencymax" : 31,
-								"frequencymin" : 31,
+								"frequencymax" : 0,
+								"frequencymin" : 0.0,
 								"tinthigh" : "1 1 1",
 								"tintlow" : "1 1 1"
 							},
-							"id" : 1078,
+							"id" : 273,
 							"textures" : [ null, null, "undefined - Imgur" ]
 						}
 					],
 					"visible" : true
 				}
 			],
-			"id" : 1072,
+			"id" : 267,
 			"image" : "models/undefined - Imgur (1).json",
 			"ledsource" : false,
 			"locktransforms" : true,
-			"name" : "31",
+			"name" : "0",
 			"origin" : "3780.00000 130.61978 0.00000",
 			"parallaxDepth" : "1.00000 1.00000",
 			"perspective" : false,
